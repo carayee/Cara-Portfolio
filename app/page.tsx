@@ -10,7 +10,7 @@ export default function Home() {
           <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-[#f2f0e8] dark:bg-black text-center">
             {/* LEFT CONTENT */}
             <h1 className="text-7xl font-semibold text-black dark:text-zinc-50">
-              Cara Yee
+              CARA YEE
               <br />
               <br />
             </h1>
@@ -22,16 +22,17 @@ export default function Home() {
               <br />
               <br />
             </p>
-            <Slideshow/>
+            <Slideshow />
             <p className="text-lg text-zinc-700 dark:text-zinc-400">
               <br />
               <br />
               When I am away from my computer, you can find me baking macarons,
-              either planning this year&apos;s travels, or lacing up my running shoes
-              - currently training for a 10km race in Calgary!
+              either planning this year&apos;s travels, or lacing up my running
+              shoes - currently training for a 10km race in Calgary!
               <br />
               <br />
-              If anything on this page resonates with you, I&apos;d love to hear from you.
+              If anything on this page resonates with you, I&apos;d love to hear
+              from you.
               <br />
               <br />
               Thanks for taking the time to explore my work!
@@ -41,20 +42,36 @@ export default function Home() {
 
         {/* ================= RIGHT PANEL ================= */}
         <section className="w-1/2 overflow-y-auto no-scrollbar">
-          <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-[#f2f0e8] dark:bg-black sm:items-start">
+          <main className="flex min-h-screen w-full max-w-3xl flex-col items-start justify-between py-32 px-16 bg-[#f2f0e8] dark:bg-black sm:items-start">
             {/* RIGHT CONTENT */}
             <h1 className="text-4xl font-semibold text-black dark:text-zinc-50">
-            Discover me on
+              Discover Me
+              <br />
+              <br />
             </h1>
 
-            <p className="text-lg text-zinc-700 dark:text-zinc-400">
-              Use this area for visuals, animations, or secondary content.
+            <p className="flex w-full text-lg text-zinc-700 dark:text-zinc-400">
+              <a href="https://www.linkedin.com/in/carayee/" target="_blank">
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/carayee"
+                className="mx-auto"
+                target="_blank"
+              >
+                GitHub
+              </a>
+              <a href="mailto:carayee8@gmail.com" target="_blank">
+                Email
+              </a>
             </p>
 
-            {/* Scroll filler */}
+            {/* Scroll filler
             {Array.from({ length: 20 }).map((_, i) => (
               <p key={i}>Right panel content {i + 1}</p>
             ))}
+            */}
+
           </main>
         </section>
       </div>
