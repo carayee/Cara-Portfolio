@@ -27,7 +27,7 @@ export default function Home() {
               <br />
               <br />
               When I am away from my computer, you can find me baking macarons,
-              either planning this year's travels, or lacing up my running shoes
+              either planning this year&apos;s travels, or lacing up my running shoes
               - currently training for a 10km race in Calgary!
             </p>
 

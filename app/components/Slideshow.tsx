@@ -19,7 +19,7 @@ export default function Slideshow() {
   }, []);
 
   return (
-    <div className="relative w-[400px] h-[300px] overflow-hidden">
+    <div className="relative w-100 h-75 overflow-hidden">
       {images.map((src, i) => (
         <img
           key={i}
