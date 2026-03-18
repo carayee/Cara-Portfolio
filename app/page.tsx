@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Slideshow from "./components/Slideshow";
 import Experience from "./components/Experience";
+import MapChart from "./components/MapChart";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <div className="flex h-full w-full">
         {/* ================= LEFT PANEL ================= */}
         <section className="w-9/20 overflow-y-auto no-scrollbar">
-          <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-[#f9f8f5] dark:bg-black text-center">
+          <main className="flex w-full max-w-3xl flex-col items-center pt-32 px-16 pb-4 bg-[#f9f8f5] dark:bg-black text-center">
             {/* LEFT CONTENT */}
             <h1 className="text-7xl font-semibold text-black dark:text-zinc-50">
               CARA YEE
@@ -18,8 +19,8 @@ export default function Home() {
 
             <p className="text-lg text-zinc-700 dark:text-zinc-400">
               Hi, I am Cara - so great to connect with you! I am currently
-              pursuing a Business and Computer Science degree at the University of
-              British Columbia in Vancouver.
+              pursuing a Business and Computer Science degree at the University
+              of British Columbia in Vancouver.
               <br />
               <br />
             </p>
@@ -36,9 +37,11 @@ export default function Home() {
               from you.
               <br />
               <br />
-              Thanks for taking the time to explore my work!
+              Thanks for taking the time to explore my work. Follow along with
+              my travel adventures below!
             </p>
           </main>
+          <MapChart />
         </section>
 
         {/* ================= RIGHT PANEL ================= */}
@@ -49,19 +52,33 @@ export default function Home() {
               Discover Me
             </h1>
 
-            <p className="flex w-full text-lg text-zinc-700 dark:text-zinc-400">
+            <p className="grid grid-cols-3 w-full text-lg text-zinc-700 dark:text-zinc-400">
               <a href="https://www.linkedin.com/in/carayee/" target="_blank">
                 LinkedIn
               </a>
               <a
                 href="https://github.com/carayee"
-                className="mx-auto"
+                className="text-center"
                 target="_blank"
               >
                 GitHub
               </a>
-              <a href="mailto:carayee8@gmail.com" target="_blank">
+              <a
+                href="mailto:carayee8@gmail.com"
+                className="text-right"
+                target="_blank"
+              >
                 Email
+              </a>
+              <a href="https://vsco.co/cara-yee/gallery" target="_blank">
+                VSCO
+              </a>
+              <a
+                href="https://github.com/carayee"
+                className="text-center"
+                target="_blank"
+              >
+                Calendly
               </a>
             </p>
 
@@ -90,13 +107,70 @@ export default function Home() {
 
               {/* Right column */}
               <div className="flex flex-col gap-4 w-full max-w-2xl">
-                <Experience
-                  logo="/Shell.jpg"
-                  company="Shell"
-                  role="Technical Product Manager | Internship"
-                  link="https://www.shell.ca/"
-                  date="Jan - Apr"
-                />
+                <div>
+                  <Experience
+                    logo="/Shell.jpg"
+                    company="Shell"
+                    role="Technical Product Manager | Internship"
+                    link="https://www.shell.ca/"
+                    date="May - Aug"
+                  />
+                </div>
+                <div>
+                  <Experience
+                    logo="/Shell.jpg"
+                    company="Shell"
+                    role="Business Engineer | Internship"
+                    link="https://www.shell.ca/"
+                    date="Jan - Apr"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-4 w-full">
+              <div className="w-40">
+                <h2 className="text-2xl font-semibold">Travels</h2>
+              </div>
+
+              {/* Right column */}
+              <div className="flex flex-col gap-4 w-full max-w-2xl">
+                <div>
+                  <Experience
+                    logo="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    company=""
+                    role="Toronto"
+                    link=""
+                    date="Jun"
+                  />
+                </div>
+                <div>
+                  <Experience
+                    logo="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    company=""
+                    role="Toronto | Bruno Mars concert"
+                    link=""
+                    date="May"
+                  />
+                </div>
+                <div>
+                  <Experience
+                    logo="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    company=""
+                    role="Barcelona"
+                    link=""
+                    date="May"
+                  />
+                </div>
+                <div>
+                  <Experience
+                    logo="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    company=""
+                    role="Rome"
+                    link=""
+                    date="Apr"
+                  />
+                </div>
               </div>
             </div>
 
@@ -122,6 +196,33 @@ export default function Home() {
                   link="https://www.connacheroil.com/"
                   date="Jul - Aug"
                 />
+              </div>
+            </div>
+            <div className="flex gap-4 w-full">
+              <div className="w-40">
+                <h2 className="text-2xl font-semibold">Travels</h2>
+              </div>
+
+              {/* Right column */}
+              <div className="flex flex-col gap-4 w-full max-w-2xl">
+                <div>
+                  <Experience
+                    logo="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    company=""
+                    role="Whistler"
+                    link=""
+                    date="Dec"
+                  />
+                </div>
+                <div>
+                  <Experience
+                    logo="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    company=""
+                    role="Vancouver | The Weeknd concert"
+                    link=""
+                    date="Jul"
+                  />
+                </div>
               </div>
             </div>
           </main>
