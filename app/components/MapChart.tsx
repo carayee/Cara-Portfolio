@@ -132,7 +132,7 @@ const MapChart = () => {
               position: "fixed" as const,
               top: mousePos.y + 10,
               left: mousePos.x + 10,
-              width: 250,
+              height: 250,
               borderRadius: 8,
               boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
               pointerEvents: "none" as const,

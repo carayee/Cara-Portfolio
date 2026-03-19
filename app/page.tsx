@@ -108,7 +108,7 @@ export default function Home() {
               </div>
 
               {/* Right column */}
-              <div className="flex flex-col gap-4 w-full max-w-2xl">
+              <div className="flex flex-col gap-2 w-full max-w-2xl">
                 <div>
                   <Experience
                     logo="/Shell.jpg"
@@ -136,7 +136,7 @@ export default function Home() {
               </div>
 
               {/* Right column */}
-              <div className="flex flex-col gap-4 w-full max-w-2xl">
+              <div className="flex flex-col gap-2 w-full max-w-2xl">
                 <div>
                   <Travels
                     flag="🇨🇦"
@@ -200,7 +200,7 @@ export default function Home() {
                   <Projects
                     name="Portfolio"
                     skills={'Frontend: Next.js, React\nStyling: Tailwind CSS, CSS\nLanguages: JavaScript, TypeScript, HTML, CSS'}
-                    link=""
+                    link="https://github.com/carayee/Cara-Portfolio"
                   />
                 </div>
               </div>
@@ -236,7 +236,7 @@ export default function Home() {
               </div>
 
               {/* Right column */}
-              <div className="flex flex-col gap-4 w-full max-w-2xl">
+              <div className="flex flex-col gap-2 w-full max-w-2xl">
                 <div>
                   <Travels
                     flag="🇨🇦"
@@ -249,6 +249,23 @@ export default function Home() {
                     flag="🇨🇦"
                     city="Vancouver | The Weeknd concert"
                     date="Jul"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            <div className="flex gap-4 w-full">
+              <div className="w-40">
+                <h2 className="text-2xl font-semibold">Projects</h2>
+              </div>
+
+              {/* Right column */}
+              <div className="flex flex-col gap-4 w-full max-w-2xl">
+                <div>
+                  <Projects
+                    name="Library Manager"
+                    skills={'Languages: Java\nGUI: Java Swing'}
+                    link="https://github.com/carayee/Library-Management-System"
                   />
                 </div>
               </div>

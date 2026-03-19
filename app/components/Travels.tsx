@@ -12,7 +12,7 @@ export default function Travels({
   return (
     <a className="
       group relative
-        flex items-center gap-4 w-full
+        flex items-center gap-5 w-full
         bg-[#f2f0e8] px-4 py-2 rounded-xl
         transition-all duration-300
         hover:bg-gray-300 hover:shadow-md
