@@ -2,6 +2,8 @@ import Image from "next/image";
 import Slideshow from "./components/Slideshow";
 import Experience from "./components/Experience";
 import MapChart from "./components/MapChart";
+import Travels from "./components/Travels";
+import Projects from "./components/Projects";
 
 export default function Home() {
   return (
@@ -9,17 +11,16 @@ export default function Home() {
       <div className="flex h-full w-full">
         {/* ================= LEFT PANEL ================= */}
         <section className="w-9/20 overflow-y-auto no-scrollbar">
-          <main className="flex w-full max-w-3xl flex-col items-center pt-32 px-16 pb-4 bg-[#f9f8f5] dark:bg-black text-center">
+          <main className="flex w-full max-w-3xl flex-col items-center pt-25 px-16 pb-4 bg-[#f9f8f5] dark:bg-black text-center">
             {/* LEFT CONTENT */}
-            <h1 className="text-7xl font-semibold text-black dark:text-zinc-50">
+            <h1 className="text-8xl px-1 pb-10 text-black dark:text-zinc-50">
               CARA YEE
-              <br />
               <br />
             </h1>
 
             <p className="text-lg text-zinc-700 dark:text-zinc-400">
               Hi, I am Cara - so great to connect with you! I am currently
-              pursuing a Business and Computer Science degree at the University
+              pursuing a dual major in Business and Computer Science at the University
               of British Columbia in Vancouver.
               <br />
               <br />
@@ -41,7 +42,9 @@ export default function Home() {
               my travel adventures below!
             </p>
           </main>
+          <div className="pb-40">
           <MapChart />
+          </div>
         </section>
 
         {/* ================= RIGHT PANEL ================= */}
@@ -74,7 +77,7 @@ export default function Home() {
                 VSCO
               </a>
               <a
-                href="https://github.com/carayee"
+                href="https://calendly.com/carayee"
                 className="text-center"
                 target="_blank"
               >
@@ -83,11 +86,10 @@ export default function Home() {
             </p>
 
             <h1 className="text-4xl font-semibold text-black dark:text-zinc-50">
-              Technical Languages:
+              Tech Stack:
             </h1>
             <p className="flex w-full text-lg text-zinc-700 dark:text-zinc-400">
-              Java, R, React, JavaScript, TypeScript, TailWind CSS, HTML, CSS ,
-              C, C++, Python, Microsoft Office Suite, Business Intelligence
+              Java, R, C, C++, Python, Microsoft Office Suite, Business Intelligence
               (RStudio, Tableau, Power BI), VS Code, Git, GitHub, IntelliJ,
               Jira, Object-Oriented Programming
             </p>
@@ -136,39 +138,69 @@ export default function Home() {
               {/* Right column */}
               <div className="flex flex-col gap-4 w-full max-w-2xl">
                 <div>
-                  <Experience
-                    logo="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    company=""
-                    role="Toronto"
-                    link=""
+                  <Travels
+                    flag="🇨🇦"
+                    city="Toronto"
                     date="Jun"
                   />
                 </div>
                 <div>
-                  <Experience
-                    logo="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    company=""
-                    role="Toronto | Bruno Mars concert"
-                    link=""
+                  <Travels
+                    flag="🇨🇦"
+                    city="Toronto | Bruno Mars concert"
                     date="May"
                   />
                 </div>
                 <div>
-                  <Experience
-                    logo="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    company=""
-                    role="Barcelona"
-                    link=""
+                  <Travels
+                    flag="🇵🇹"
+                    city="Lisbon"
                     date="May"
                   />
                 </div>
                 <div>
-                  <Experience
-                    logo="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    company=""
-                    role="Rome"
-                    link=""
+                  <Travels
+                    flag="🇪🇸"
+                    city="Barcelona"
+                    date="May"
+                  />
+                </div>
+                <div>
+                  <Travels
+                    flag="🇨🇮"
+                    city="Rome"
                     date="Apr"
+                  />
+                </div>
+                <div>
+                  <Travels
+                    flag="🇨🇦"
+                    city="Waterloo"
+                    date="Feb"
+                  />
+                </div>
+                <div>
+                  <Travels
+                    flag="🇨🇦"
+                    city="London"
+                    date="Feb"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-4 w-full">
+              <div className="w-40">
+                <h2 className="text-2xl font-semibold">Projects</h2>
+              </div>
+
+              {/* Right column */}
+              <div className="flex flex-col gap-4 w-full max-w-2xl">
+                <div>
+                  <Projects
+                    name="Portfolio"
+                    skills={'Frontend: Next.js, React\nStyling: Tailwind CSS, CSS\nLanguages: JavaScript, TypeScript, HTML, CSS'}
+                    link=""
                   />
                 </div>
               </div>
@@ -206,20 +238,16 @@ export default function Home() {
               {/* Right column */}
               <div className="flex flex-col gap-4 w-full max-w-2xl">
                 <div>
-                  <Experience
-                    logo="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    company=""
-                    role="Whistler"
-                    link=""
+                  <Travels
+                    flag="🇨🇦"
+                    city="Whistler"
                     date="Dec"
                   />
                 </div>
                 <div>
-                  <Experience
-                    logo="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    company=""
-                    role="Vancouver | The Weeknd concert"
-                    link=""
+                  <Travels
+                    flag="🇨🇦"
+                    city="Vancouver | The Weeknd concert"
                     date="Jul"
                   />
                 </div>

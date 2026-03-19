@@ -8,9 +8,30 @@ import {
   createCoordinates,
 } from "@vnedyalk0v/react19-simple-maps";
 
-const highlightedCountries = ["Canada", "United States of America", "Mexico", "United Kingdom"
-    , "Italy","Netherlands", "Belgium","Germany","Spain","Portugal","Switzerland","France", "Czechia", "Austria", 
-    "Tanzania", "Kenya", "China", "South Korea", "Japan", "Taiwan","Australia", "Malaysia"];
+const highlightedCountries = [
+  "Canada",
+  "United States of America",
+  "Mexico",
+  "United Kingdom",
+  "Italy",
+  "Netherlands",
+  "Belgium",
+  "Germany",
+  "Spain",
+  "Portugal",
+  "Switzerland",
+  "France",
+  "Czechia",
+  "Austria",
+  "Tanzania",
+  "Kenya",
+  "China",
+  "South Korea",
+  "Japan",
+  "Taiwan",
+  "Australia",
+  "Malaysia",
+];
 
 const countryImages: Record<string, string> = {
   Canada: "/visited/canada.jpg",
@@ -26,10 +47,10 @@ const countryImages: Record<string, string> = {
   Switzerland: "/visited/switzerland.jpg",
   France: "/visited/france.jpg",
   Czechia: "/visited/czechia.jpg",
-  Austria: "/visited/USA.jpg",
+  Austria: "/visited/austria.jpg",
   Tanzania: "/visited/tanzania.jpg",
   Kenya: "/visited/kenya.jpg",
-  China: "/visited/USA.jpg",
+  China: "/visited/china.jpg",
   "South Korea": "/visited/southkorea.jpg",
   Japan: "/visited/japan.jpg",
   Taiwan: "/visited/taiwan.jpg",
@@ -38,7 +59,9 @@ const countryImages: Record<string, string> = {
 };
 
 const MapChart = () => {
-  const [mousePos, setMousePos] = useState<{ x: number; y: number } | null>(null);
+  const [mousePos, setMousePos] = useState<{ x: number; y: number } | null>(
+    null
+  );
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
 
   return (
@@ -58,6 +81,8 @@ const MapChart = () => {
               const isHighlighted = highlightedCountries.includes(
                 geo.properties?.name
               );
+              const isHovered = hoveredCountry === geo.properties?.name;
+
               return (
                 <Geography
                   key={i}
@@ -74,11 +99,19 @@ const MapChart = () => {
                   }}
                   style={{
                     default: {
-                      fill: isHighlighted ? "#F53" : "#D6D6DA",
+                      fill: isHovered
+                        ? "#B42"
+                        : isHighlighted
+                        ? "#E53"
+                        : "#D6D6DA",
                       outline: "none",
                     },
                     hover: {
-                      fill: isHighlighted ? "#E42" : "#D6D6DA",
+                      fill: isHovered
+                        ? "#B42"
+                        : isHighlighted
+                        ? "#F53"
+                        : "#B6B6AA",
                       outline: "none",
                     },
                   }}
@@ -99,7 +132,7 @@ const MapChart = () => {
               position: "fixed" as const,
               top: mousePos.y + 10,
               left: mousePos.x + 10,
-              width: 150,
+              width: 250,
               borderRadius: 8,
               boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
               pointerEvents: "none" as const,
