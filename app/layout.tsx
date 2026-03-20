@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Warning from "./components/Warning";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${geistMono.variable} antialiased bg-[#c8c2aa] text-zinc-900`}
       >
+        < Warning />
         {children}
       </body>
     </html>

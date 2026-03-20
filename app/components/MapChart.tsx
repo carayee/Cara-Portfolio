@@ -7,6 +7,7 @@ import {
   Geography,
   createCoordinates,
 } from "@vnedyalk0v/react19-simple-maps";
+import { useEffect, useRef } from "react";
 
 const highlightedCountries = [
   "Canada",
@@ -63,9 +64,24 @@ const MapChart = () => {
     null
   );
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
+  const mapRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if (!mapRef.current?.contains(e.target as Node)) {
+        setHoveredCountry(null);
+        setMousePos(null);
+      }
+    };
+
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
 
   return (
-    <>
+    <div ref={mapRef}>
       <ComposableMap
         projection="geoEqualEarth"
         projectionConfig={{
@@ -128,12 +144,14 @@ const MapChart = () => {
           <img
             src={countryImages[hoveredCountry] as string}
             alt={hoveredCountry}
+            className="pointer-events-none absolute z-50"
             style={{
               position: "fixed" as const,
               top: mousePos.y + 10,
-              left: mousePos.x > window.innerWidth / 2
-              ? mousePos.x -220
-              : mousePos.x + 10,
+              left:
+                mousePos.x > window.innerWidth / 2
+                  ? mousePos.x - 220
+                  : mousePos.x,
               height: 230,
               borderRadius: 8,
               boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
@@ -142,7 +160,7 @@ const MapChart = () => {
             }}
           />
         )}
-    </>
+    </div>
   );
 };
 

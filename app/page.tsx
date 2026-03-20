@@ -41,7 +41,7 @@ export default function Home() {
               my travel adventures below!
             </p>
           </main>
-            <MapChart />
+          <MapChart />
           <p className="text-1xl text-center text-zinc-700 dark:text-zinc-400 pb-40">
             Hover over the map for a glimpse of mini me 🙊.
           </p>
