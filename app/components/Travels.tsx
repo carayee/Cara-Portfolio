@@ -19,12 +19,12 @@ export default function Travels({
       "
     >
       {/* FLag */}
-      <div className=" text-4xl w-10 h-10 flex items-center justify-center">
+      <div className=" text-4xl w-9 h-9 flex items-center justify-center">
         {flag}
       </div>
 
       {/* Text */}
-      <div className="flex items-center justify-end w-full">
+      <div className="flex items-center justify-end w-full dark:text-black">
         <span className="text-1xl text-right">
           {city}
         </span>

@@ -24,7 +24,7 @@ export default function Projects({
     >
 
       {/* Text */}
-      <div className="flex items-start justify-between w-full">
+      <div className="flex items-start justify-between w-full  dark:text-black">
         <span className="font-semibold text-1xl">
           {name}
         </span>

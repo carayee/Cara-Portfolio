@@ -131,8 +131,10 @@ const MapChart = () => {
             style={{
               position: "fixed" as const,
               top: mousePos.y + 10,
-              left: mousePos.x + 10,
-              height: 250,
+              left: mousePos.x > window.innerWidth / 2
+              ? mousePos.x -220
+              : mousePos.x + 10,
+              height: 230,
               borderRadius: 8,
               boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
               pointerEvents: "none" as const,
