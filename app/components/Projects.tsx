@@ -4,11 +4,7 @@ type ProjectsProps = {
   link: string;
 };
 
-export default function Projects({
-  name,
-  skills,
-  link,
-}: ProjectsProps) {
+export default function Projects({ name, skills, link }: ProjectsProps) {
   return (
     <a
       href={link}
@@ -22,12 +18,8 @@ export default function Projects({
         hover:bg-gray-300 hover:shadow-md
       "
     >
-
-      {/* Text */}
       <div className="flex items-start justify-between w-full  dark:text-black">
-        <span className="font-semibold text-1xl">
-          {name}
-        </span>
+        <span className="font-semibold text-1xl">{name}</span>
 
         <span className="text-1xl text-right whitespace-pre-line">
           {skills}

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 
 const Warning = () => {
@@ -23,7 +23,9 @@ const Warning = () => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="text-5xl mb-4"></div>
-        <h2 className="text-xl font-bold text-gray-800 mb-10">Best Viewed on Larger Screen</h2>
+        <h2 className="text-xl font-bold text-gray-800 mb-10">
+          Best Viewed on Larger Screen
+        </h2>
         <p className="text-gray-500 text-sm mb-8">
           For the best experience, please open this on a desktop or laptop.
         </p>

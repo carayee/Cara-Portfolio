@@ -34,21 +34,15 @@ export default function Slideshow() {
           }`}
         />
       ))}
-
-      {/* Buttons */}
       <button
-        onClick={() =>
-          setIndex((index - 1 + images.length) % images.length)
-        }
+        onClick={() => setIndex((index - 1 + images.length) % images.length)}
         className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1"
       >
         ❮
       </button>
 
       <button
-        onClick={() =>
-          setIndex((index + 1) % images.length)
-        }
+        onClick={() => setIndex((index + 1) % images.length)}
         className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1"
       >
         ❯

@@ -12,7 +12,6 @@ export default function Home() {
         {/* ================= LEFT PANEL ================= */}
         <section className="w-9/20 overflow-y-auto max-md:w-full no-scrollbar max-md:overflow-visible">
           <main className="flex w-full max-w-3xl flex-col items-center pt-25 px-16 pb-4 bg-[#f9f8f5] dark:bg-black text-center">
-            {/* LEFT CONTENT */}
             <h1 className="text-8xl px-1 pb-10 text-black dark:text-zinc-50">
               CARA YEE
               <br />
@@ -50,7 +49,6 @@ export default function Home() {
         {/* ================= RIGHT PANEL ================= */}
         <section className="w-11/20 overflow-y-auto no-scrollbar max-md:w-full max-md:overflow-visible">
           <main className="gap-6 flex min-h-screen w-full max-w-3xl flex-col items-start justify-between py-32 px-16 bg-[#f2f0e8] dark:bg-black sm:items-start">
-            {/* RIGHT CONTENT */}
             <h1 className="text-4xl font-semibold text-black dark:text-zinc-50">
               Discover Me:
             </h1>

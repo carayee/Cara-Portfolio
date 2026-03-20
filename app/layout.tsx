@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${geistMono.variable} antialiased bg-[#c8c2aa] text-zinc-900`}
       >
-        < Warning />
+        <Warning />
         {children}
       </body>
     </html>
