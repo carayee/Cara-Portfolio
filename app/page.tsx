@@ -218,7 +218,7 @@ export default function Home() {
                   <Projects
                     name="Portfolio"
                     skills={
-                      "Frontend: Next.js, React\nStyling: Tailwind CSS, CSS\nLanguages: JavaScript, TypeScript, HTML, CSS"
+                      "Frontend: Next.js, React\nStyling: Tailwind CSS, CSS\nLanguages: JavaScript, TypeScript, HTML"
                     }
                     link="https://github.com/carayee/Cara-Portfolio"
                   />

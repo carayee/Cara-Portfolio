@@ -28,6 +28,7 @@ export default function Slideshow() {
       {images.map((src, i) => (
         <img
           key={i}
+          alt={"Slideshow Pictures"}
           src={src}
           className={`absolute w-full h-full object-cover transition-opacity duration-700 ${
             i === index ? "opacity-100" : "opacity-0"
