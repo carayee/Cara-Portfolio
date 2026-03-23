@@ -180,29 +180,28 @@ export default function Home() {
               {/* Right column */}
               <div className="flex flex-col gap-2 w-full max-w-2xl">
                 <div>
-                  <Travels flag="🇨🇦" city="Toronto" date="Jun" />
+                  <Travels flag="🇨🇦" city="Toronto" />
                 </div>
                 <div>
                   <Travels
                     flag="🇨🇦"
                     city="Toronto | Bruno Mars concert"
-                    date="May"
                   />
                 </div>
                 <div>
-                  <Travels flag="🇵🇹" city="Lisbon" date="May" />
+                  <Travels flag="🇵🇹" city="Lisbon"/>
                 </div>
                 <div>
-                  <Travels flag="🇪🇸" city="Barcelona" date="May" />
+                  <Travels flag="🇪🇸" city="Barcelona"/>
                 </div>
                 <div>
-                  <Travels flag="🇨🇮" city="Rome" date="Apr" />
+                  <Travels flag="🇨🇮" city="Rome"/>
                 </div>
                 <div>
-                  <Travels flag="🇨🇦" city="Waterloo" date="Feb" />
+                  <Travels flag="🇨🇦" city="Waterloo"/>
                 </div>
                 <div>
-                  <Travels flag="🇨🇦" city="London" date="Feb" />
+                  <Travels flag="🇨🇦" city="London"/>
                 </div>
               </div>
             </div>
@@ -265,13 +264,12 @@ export default function Home() {
               {/* Right column */}
               <div className="flex flex-col gap-2 w-full max-w-2xl">
                 <div>
-                  <Travels flag="🇨🇦" city="Whistler" date="Dec" />
+                  <Travels flag="🇨🇦" city="Whistler"/>
                 </div>
                 <div>
                   <Travels
                     flag="🇨🇦"
                     city="Vancouver | The Weeknd concert"
-                    date="Jul"
                   />
                 </div>
               </div>
