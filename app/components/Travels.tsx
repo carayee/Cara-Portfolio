@@ -14,9 +14,11 @@ export default function Travels({ flag, city}: TravelsProps) {
         hover:bg-gray-300 hover:shadow-md
       "
     >
-      <div className=" text-4xl w-9 h-9 flex items-center justify-center">
-        {flag}
-      </div>
+        <img
+        src={flag}
+        alt={`${flag} emoji`}
+        className="w-8 h-8 object-contain"
+      />
 
       <div className="flex items-center justify-end w-full dark:text-black">
         <span className="text-1xl text-right">{city}</span>

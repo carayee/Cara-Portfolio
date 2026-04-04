@@ -7,17 +7,17 @@ import Projects from "./components/Projects";
 
 export default function Home() {
   return (
-    <div className="h-screen overflow-hidden bg-[#f9f8f5] font-sans dark:bg-black max-md:h-auto">
+    <div className="h-screen overflow-hidden bg-[#f9f8f5] font-sans max-md:h-auto">
       <div className="flex h-full w-full max-md:flex-col">
         {/* ================= LEFT PANEL ================= */}
         <section className="w-9/20 overflow-y-auto max-md:w-full no-scrollbar max-md:overflow-visible">
-          <main className="flex w-full flex-col items-center pt-25 px-16 pb-4 bg-[#f9f8f5] dark:bg-black text-center">
-            <h1 className="text-8xl px-1 pb-10 text-black dark:text-zinc-50">
+          <main className="flex w-full flex-col items-center pt-25 px-16 pb-4 bg-[#f9f8f5] text-center">
+            <h1 className="text-8xl px-1 pb-10 text-black">
               CARA YEE
               <br />
             </h1>
 
-            <p className="text-lg text-zinc-700 dark:text-zinc-400">
+            <p className="text-lg text-zinc-700">
               Hi, I am Cara - so great to connect with you! I am currently
               pursuing a dual major in Business and Computer Science at the
               University of British Columbia in Vancouver.
@@ -25,7 +25,7 @@ export default function Home() {
               <br />
             </p>
             <Slideshow />
-            <p className="text-lg text-zinc-700 dark:text-zinc-400">
+            <p className="text-lg text-zinc-700">
               <br />
               <br />
               When I am away from my computer, you can find me baking macarons,
@@ -41,19 +41,19 @@ export default function Home() {
             </p>
           </main>
           <MapChart />
-          <p className="text-1xl text-center text-zinc-700 dark:text-zinc-400 pb-40">
+          <p className="text-1xl text-center text-zinc-700 pb-40">
             Hover over the map for a glimpse of mini me 🙊.
           </p>
         </section>
 
         {/* ================= RIGHT PANEL ================= */}
         <section className="w-11/20 overflow-y-auto no-scrollbar max-md:w-full max-md:overflow-visible">
-          <main className="gap-6 flex min-h-screen w-full flex-col items-start justify-between py-32 px-16 bg-[#f2f0e8] dark:bg-black sm:items-start">
-            <h1 className="text-4xl font-semibold text-black dark:text-zinc-50">
+          <main className="gap-6 flex min-h-screen w-full flex-col items-start justify-between py-32 px-16 bg-[#f2f0e8] sm:items-start">
+            <h1 className="text-4xl font-semibold text-black">
               Discover Me:
             </h1>
 
-            <p className="grid grid-cols-3 w-full text-lg text-zinc-700 dark:text-zinc-400">
+            <p className="grid grid-cols-3 w-full text-lg text-zinc-700">
               <a href="https://www.linkedin.com/in/carayee/" target="_blank">
                 LinkedIn
               </a>
@@ -90,7 +90,7 @@ export default function Home() {
               </a>
             </p>
 
-            <h1 className="text-4xl font-semibold text-black dark:text-zinc-50">
+            <h1 className="text-4xl font-semibold text-black">
               Technical:
             </h1>
             <div className="flex flex-wrap gap-6">
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-center gap-6 w-full">
-              <h1 className="text-5xl font-semibold text-black dark:text-zinc-50">
+              <h1 className="text-5xl font-semibold text-black">
                 2026
               </h1>
               <div className="flex-1 h-px bg-black"></div>
@@ -146,7 +146,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-4 w-full">
               {/* Left column */}
               <div className="w-40">
-                <h2 className="text-2xl font-semibold">Experience</h2>
+                <h2 className="text-2xl font-semibold text-black">Experience</h2>
               </div>
 
               {/* Right column */}
@@ -174,41 +174,41 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row gap-4 w-full">
               <div className="w-40">
-                <h2 className="text-2xl font-semibold">Travels</h2>
+                <h2 className="text-2xl font-semibold text-black">Travels</h2>
               </div>
 
               {/* Right column */}
               <div className="flex flex-col gap-2 w-full">
                 <div>
-                  <Travels flag="🇨🇦" city="Toronto" />
+                  <Travels flag="/flags/canadaFlag.jpg" city="Toronto" />
                 </div>
                 <div>
                   <Travels
-                    flag="🇨🇦"
+                    flag="/flags/canadaFlag.jpg"
                     city="Toronto | Bruno Mars concert"
                   />
                 </div>
                 <div>
-                  <Travels flag="🇵🇹" city="Lisbon"/>
+                  <Travels flag="/flags/portugalFlag.jpg" city="Lisbon"/>
                 </div>
                 <div>
-                  <Travels flag="🇪🇸" city="Barcelona"/>
+                  <Travels flag="/flags/spainFlag.jpg" city="Barcelona"/>
                 </div>
                 <div>
-                  <Travels flag="🇨🇮" city="Rome"/>
+                  <Travels flag="/flags/italyFlag.jpg" city="Rome"/>
                 </div>
                 <div>
-                  <Travels flag="🇨🇦" city="Waterloo"/>
+                  <Travels flag="/flags/canadaFlag.jpg" city="Waterloo"/>
                 </div>
                 <div>
-                  <Travels flag="🇨🇦" city="London"/>
+                  <Travels flag="/flags/canadaFlag.jpg" city="London"/>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col md:flex-row gap-4 w-full">
               <div className="w-40">
-                <h2 className="text-2xl font-semibold">Projects</h2>
+                <h2 className="text-2xl font-semibold text-black">Projects</h2>
               </div>
 
               {/* Right column */}
@@ -226,7 +226,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-center gap-6 w-full">
-              <h1 className="text-5xl font-semibold text-black dark:text-zinc-50">
+              <h1 className="text-5xl font-semibold text-black">
                 2025
               </h1>
               <div className="flex-1 h-px bg-black"></div>
@@ -235,7 +235,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-4 w-full">
               {/* Left column */}
               <div className="w-40">
-                <h2 className="text-2xl font-semibold">Experience</h2>
+                <h2 className="text-2xl font-semibold text-black">Experience</h2>
               </div>
 
               {/* Right column */}
@@ -258,17 +258,17 @@ export default function Home() {
             </div>
             <div className="flex flex-col md:flex-row gap-4 w-full">
               <div className="w-40">
-                <h2 className="text-2xl font-semibold">Travels</h2>
+                <h2 className="text-2xl font-semibold text-black">Travels</h2>
               </div>
 
               {/* Right column */}
               <div className="flex flex-col gap-2 w-full">
                 <div>
-                  <Travels flag="🇨🇦" city="Whistler"/>
+                  <Travels flag="/flags/canadaFlag.jpg" city="Whistler"/>
                 </div>
                 <div>
                   <Travels
-                    flag="🇨🇦"
+                    flag="/flags/canadaFlag.jpg"
                     city="Vancouver | The Weeknd concert"
                   />
                 </div>
@@ -277,7 +277,7 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row gap-4 w-full">
               <div className="w-40">
-                <h2 className="text-2xl font-semibold">Projects</h2>
+                <h2 className="text-2xl font-semibold text-black">Projects</h2>
               </div>
 
               {/* Right column */}

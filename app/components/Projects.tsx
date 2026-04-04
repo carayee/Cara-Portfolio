@@ -18,6 +18,7 @@ export default function Projects({ name, skills, link }: ProjectsProps) {
         hover:bg-gray-300 hover:shadow-md
       "
     >
+      {/* Text */}
       <div className="flex items-start justify-between w-full  dark:text-black">
         <span className="font-semibold text-1xl">{name}</span>
 

@@ -34,7 +34,7 @@ export default function Experience({
       />
 
       {/* Text */}
-      <div className="flex items-center justify-between w-full  dark:text-black">
+      <div className="flex items-center justify-between w-full dark:text-black">
         <span className="font-semibold text-1xl">{company}</span>
 
         <span className="text-1xl text-right">{role}</span>
