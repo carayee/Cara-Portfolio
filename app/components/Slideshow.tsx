@@ -10,6 +10,12 @@ const images = [
   "/slideshow/img6.jpg",
   "/slideshow/img7.jpg",
   "/slideshow/img8.jpg",
+  "/slideshow/img9.jpg",
+  "/slideshow/img10.jpg",
+  "/slideshow/img11.jpg",
+  "/slideshow/img12.jpg",
+  "/slideshow/img13.jpg",
+  "/slideshow/img14.jpg",
 ];
 
 export default function Slideshow() {
