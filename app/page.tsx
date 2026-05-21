@@ -169,6 +169,15 @@ export default function Home() {
                     date="Jan - Apr"
                   />
                 </div>
+                <div>
+                  <Experience
+                    logo="/UBC.jpg"
+                    company="UBC Faculty of Medicine"
+                    role="AI Strategy Consultant | Internship"
+                    link="https://www.med.ubc.ca/"
+                    date="Jan - Present"
+                  />
+                </div>
               </div>
             </div>
 
