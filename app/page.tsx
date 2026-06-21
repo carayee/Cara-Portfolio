@@ -188,9 +188,6 @@ export default function Home() {
               {/* Right column */}
               <div className="flex flex-col gap-2 w-full">
                 <div>
-                  <Travels flag="/flags/canadaFlag.jpg" city="Toronto" />
-                </div>
-                <div>
                   <Travels
                     flag="/flags/canadaFlag.jpg"
                     city="Toronto | Bruno Mars concert"
