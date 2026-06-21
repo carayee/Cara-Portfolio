@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Slideshow from "./components/Slideshow";
 import Experience from "./components/Experience";
 import MapChart from "./components/MapChart";
@@ -155,7 +154,7 @@ export default function Home() {
                   <Experience
                     logo="/Shell.jpg"
                     company="Shell"
-                    role="Business Engineer | Internship"
+                    role="Digital & Data - Business Engineer | Internship"
                     link="https://www.shell.ca/"
                     date="May - Aug"
                   />
@@ -164,7 +163,7 @@ export default function Home() {
                   <Experience
                     logo="/Shell.jpg"
                     company="Shell"
-                    role="Technical Product Manager | Internship"
+                    role="Digital & Data - Technical Product Manager | Internship"
                     link="https://www.shell.ca/"
                     date="Jan - Apr"
                   />
