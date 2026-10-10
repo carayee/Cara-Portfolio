@@ -18,7 +18,7 @@ export default function Home() {
 
             <p className="text-lg text-zinc-700">
               Hi, I am Cara - so great to connect with you! I am currently
-              pursuing a dual major in Business and Computer Science at the
+              pursuing a degree in Business and Computer Science at the
               University of British Columbia in Vancouver.
               <br />
               <br />
@@ -152,6 +152,15 @@ export default function Home() {
               <div className="flex flex-col gap-2 w-full">
                 <div>
                   <Experience
+                    logo="/Bmo.jpg"
+                    company="BMO Capital Markets"
+                    role="Global Markets - Commodity Derivatives Sales & Trading | Internship"
+                    link="https://capitalmarkets.bmo.com/en/"
+                    date="Sep - Dec"
+                  />
+                </div>
+                <div>
+                  <Experience
                     logo="/Shell.jpg"
                     company="Shell"
                     role="Digital & Data - Business Engineer | Internship"
@@ -188,6 +197,18 @@ export default function Home() {
               {/* Right column */}
               <div className="flex flex-col gap-2 w-full">
                 <div>
+                  <Travels flag="/flags/usaFlag.jpg" city="San Francisco"/>
+                </div>
+                <div>
+                  <Travels flag="/flags/japanFlag.jpg" city="Toyko"/>
+                </div>
+                <div>
+                  <Travels flag="/flags/chinaFlag.jpg" city="Shenzhen"/>
+                </div>
+                <div>
+                  <Travels flag="/flags/hongkongFlag.jpg" city="Hong Kong"/>
+                </div>
+                <div>
                   <Travels
                     flag="/flags/canadaFlag.jpg"
                     city="Toronto | Bruno Mars concert"
@@ -200,13 +221,7 @@ export default function Home() {
                   <Travels flag="/flags/spainFlag.jpg" city="Barcelona"/>
                 </div>
                 <div>
-                  <Travels flag="/flags/italyFlag.jpg" city="Rome"/>
-                </div>
-                <div>
-                  <Travels flag="/flags/canadaFlag.jpg" city="Waterloo"/>
-                </div>
-                <div>
-                  <Travels flag="/flags/canadaFlag.jpg" city="London"/>
+                  <Travels flag="/flags/italyFlag.jpg" city="Cinque Terre"/>
                 </div>
               </div>
             </div>
@@ -249,7 +264,7 @@ export default function Home() {
                   logo="/Connacher.jpg"
                   company="Connacher"
                   role="Marketing Data Analyst | Internship"
-                  link="https://www.connacheroil.com/"
+                  link=""
                   date="Jul - Aug"
                 />
                 <Experience
